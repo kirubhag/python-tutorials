@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    font-family: sans-serif, Arial;
+}
+
+:root{
+    --bg-white-color: #fff;
+    --bg-sec-white-color: #f3f5f9;
+    --bg-black-color: #1e1e1e;
+    --primary-color: #010101;
+    --secondary-color: #646464;
+    --highlight-color: #056cb8;
+    --bg-color: #f8f9fb;
+    --redclr: #f60014;
+    --bg-blue-color: #0060b4;
+    --bg-yellow-color: #fed600;
+}
+
+.btn-primary {
+    background-color: var(--bg-blue-color);
+    color: var(--bg-white-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start, .install {
+    font-size: large;
+}
+
+.install{
+    background-color: var(--bg-blue-color);
+}
+
+header{
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0px 0px 5px 0px #080808;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.python-logo {
+    width: 150px;
+    height: 40px;
+}
+
+.python-logo-sec{
+    width: 250px;
+    height: 80px;
+}
+
+.python-menu{
+    width: 85vw;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;    
+}
+
+.python-menu li, .python-menu a{
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+article{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+a.active {
+    color: var(--bg-blue-color);
+}
+
+.art-intro{
+    background-color: var(--bg-sec-white-color);
+    height: 350px;
+}
+
+/* Feature Section Starts HERE */
+.art-feature {
+    background-color: var(--bg-blue-color);
+    color: var(--bg-white-color);
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feature-wrap {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.feature-box{
+    width: 300px;
+    padding: 20px 20px;
+    border: 2px solid var(--bg-white-color);
+}
+
+.feature-box h3{
+    color: var(--bg-yellow-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.art-box{
+    width: 40vw;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+
+.art-box h1, .install-box h1{
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+/* Feature Section Ends HERE */
+
+/* Setting Up Python Section Starts HERE */
+.art-install{
+    height: 400px;
+    display: flex;
+    background-color: var(--bg-yellow-color);
+    color: var(--bg-black-color);
+}
+
+.art-install ul li{
+    list-style: number;
+}
+
+.install-div {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.install-div h1{
+    color: var(--bg-blue-color);
+}
+
+.install-box {
+    width: 50vw;
+}
+.install-box h1{
+    color: var(--bg-blue-color);
+    margin-bottom: 10px;
+}
+/* Setting Up Python Section Ends HERE */
