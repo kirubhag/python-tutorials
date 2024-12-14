@@ -21,6 +21,10 @@
     --bg-yellow-color: #fed600;
 }
 
+.linenums li {
+    list-style-type: decimal;
+}
+
 .btn-primary {
     background-color: var(--bg-blue-color);
     color: var(--bg-white-color);
@@ -115,7 +119,7 @@ a.active {
     border: 2px solid var(--bg-white-color);
 }
 
-.feature-box h3{
+.feature-box h3, .program-2-explain h3{
     color: var(--bg-yellow-color);
     font-size: 1.2rem;
     margin-bottom: 10px;
@@ -132,7 +136,7 @@ a.active {
     align-content: flex-end;
 }
 
-.art-box h1, .install-box h1{
+.art-box h1, .install-box h1, .art-first-program-box h1{
     color: var(--secondary-color);
     font-size: 2rem;
 }
@@ -146,7 +150,7 @@ a.active {
     color: var(--bg-black-color);
 }
 
-.art-install ul li{
+.art-install ul li, .art-first-program-box li{
     list-style: number;
 }
 

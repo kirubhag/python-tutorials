@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing Your First Python Program</title>
+    <link rel="stylesheet" type="text/css" href="./js/lib/google-code-prettify/prettify.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/get-started-style.css">
+    <link rel="stylesheet" href="./js/lib/google-code-prettify/sons-of-obsidian.css">
 </head>
 <body>
     <header>
         <section class="heading">
-            <img class="python-logo" src="./images/python-logo-generic.svg" alt="Python Tutorials" />
+            <a href="./index.html">
+                <img class="python-logo" src="./images/python-logo-generic.svg" alt="Python Tutorials" />
+            </a>
             <ul class="python-menu">
                 <li><a href="./get-started.html" class="active">Get Started</a></li>
                 <li>Data Types</li>
@@ -22,16 +27,64 @@
             </ul>
         </section>
     </header>
-    <article class="art-intro">
-        <img class="python-logo-sec" src="./images/python-logo-generic.svg" alt="Python Tutorials" />
-        <section class="art-box">
-            <h1>Introduction to Python</h1>
-            <p>Python is a versatile and beginner-friendly programming language that is widely used in web development, data analysis, artificial intelligence, and more. 
-            It is known for its simple syntax, which makes it easy to read and write.</p>
-            <a class="btn btn-primary start" href="./get-started.html">Start Learning</a>
+    <article class="art-first-program">
+        <div class="art-first-program-code">
+            <pre class="code-1 prettyprint linenums">print("Hello, World!")</pre>     
+            <img src="./images/program-1.png" alt="Hello World">       
+        </div>
+        <section class="art-first-program-box">
+            <h1>Writing Your First Python Program</h1>
+            <ul>
+                <li>Open any text editor or any Integrated Development Environment (IDE) like VS Code or Notepad++ or Sublime or PyCharm.</li>
+                <li>Copy and paste the code shown here.</li>
+                <li>Save the file with a <strong>.py</strong> extension, for example, <strong>hello.py</strong>.</li>
+                <li>Run the program by typing python <strong>hello.py</strong> in your terminal.</li>
+            </ul>
+        </section>
+    </article>
+    
+    <article class="art-variable">
+        <section class="program-2-explain">
+            <h3>Variables and Data Types</h3>
+            <p>In Python, variables are used to store data. You don’t need to declare their type explicitly.</p>
+        </section>
+        <section class="program-2">
+            <pre class="prettyprint linenums">name = "John"  # String
+iq = 120         # Integer
+height = 5.9     # Float
+is_student = True # Boolean</pre>
         </section>
     </article>
 
-    
+    <article class="art-program-3">
+        <section class="art-prg-3">
+            <h3>Input and Output</h3>
+            <pre class="prettyprint linenums">name = input("Enter your name: ")
+print("Hello, " + name)</pre>
+        </section>
+        <section class="art-prg-3">
+            <h3>If-Else Statements</h3>
+            <pre class="prettyprint linenums">age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</pre>
+        </section>
+        <section class="art-prg-3">
+            <h3>Loops</h3>
+            <pre class="prettyprint linenums">for i in range(5):
+    print(i)</pre>
+        </section>
+        <section class="art-prg-3">
+            <h3>Functions</h3>
+            <pre class="prettyprint linenums">def greet(name):
+    print("Hello, " + name)
+greet("John")</pre>
+        </section>
+    </article>
+
+    <script type="text/javascript" src="./js/lib/google-code-prettify/prettify.js"></script>
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="./js/default.js"></script>
 </body>
 </html>
